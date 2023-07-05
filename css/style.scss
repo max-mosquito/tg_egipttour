@@ -136,12 +136,12 @@ h3 {
     line-height: 22px;
 }
 // end header
-// start main
-.main {
+// start find
+.find {
     padding-bottom: 105px;
     margin-bottom: 110px;
 }
-.main_wrap {
+.find_wrap {
     border-radius: 20px;
     background: url("../img/bg.png");
     width: 1360px;
@@ -156,13 +156,13 @@ h3 {
         background: url("../img/mountain.png");
     }
 }
-.main_title {
+.find_title {
     width: 940px;
     margin: 0 auto;
     padding-top: 128px;
     padding-bottom: 375px;
 }
-.main_calc {
+.find_calc {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 50%);
@@ -174,12 +174,12 @@ h3 {
     border-radius: 25px;
     box-shadow: 0px 30px 60px 0px #c6bfbf2e;
 }
-.main_calc_list {
+.find_calc_list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     flex: 1 1 auto;
 }
-.main_calc_list_item {
+.find_calc_list_item {
     padding: 0 24px;
     border-right: 1px solid #cecdd0;
     &:last-child {
@@ -207,7 +207,7 @@ h3 {
         }
     }
 }
-.main_calc_list_item_title {
+.find_calc_list_item_title {
     margin-bottom: 9px;
     p {
         font-size: 16px;
@@ -218,7 +218,7 @@ h3 {
 }
 .select_calc {
 }
-.main_calc_btn {
+.find_calc_btn {
     flex: 0 0 auto;
 }
 .calc_btn {
@@ -228,7 +228,7 @@ h3 {
     font-weight: 700;
     line-height: 26px;
 }
-// end main
+// end find
 // start guides
 .guides {
     padding-bottom: 30px;

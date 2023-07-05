@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="css/select2.min.css" />
-        <link rel="stylesheet" href="css/style.css" />
-        <title>EgyptTour</title>
-    </head>
-    <body>
+<head>
+	<meta charset="UTF-8">
+	<title>FIGMA | Макеты для верстки — Верстка страницы</title>
+	<meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/select2.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>EgyptTour</title>
+</head>
+<body>
+
+    <!-- Начало: Данный блок удалять нельзя -->
+    <div class="maketforfigma">
+        <a href="https://t.me/s/FigmaToHTML" target="_blank">
+            <img src="img/logo.png">
+        </a>
+        <div>
+            <p>
+                Данная верстка, была реализована пользователем в рамках обучающего телеграм канал <a href="https://t.me/s/FigmaToHTML" target="_blank">FIGMA | Макеты для верстки</a>
+            </p>
+            <p>
+                При помощи <a href="https://t.me/HtmlCodeForMoney_bot?from_git" target="_blank">Telegram-бота</a> пользователь получил оплату за верстку этого макета.
+            </p>
+        </div>
+    </div>
+    <!-- Конец -->
+
+    <div class="main">
         <!-- start header -->
         <header class="header">
             <div class="header_wrap wrap">
@@ -24,27 +44,27 @@
                 </div>
                 <nav class="header_right">
                     <ul class="header_right_list">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Guides</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Inspiration</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="#guides">Guides</a></li>
+                        <li><a href="#how">About</a></li>
+                        <li><a href="#are">Inspiration</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                     <button class="btn btn_reg">Sign Up</button>
                 </nav>
             </div>
         </header>
         <!-- end header -->
-        <!-- start main -->
-        <section class="main">
-            <div class="main_wrap wrap">
-                <div class="main_title">
+        <!-- start find -->
+        <section class="find">
+            <div class="find_wrap wrap">
+                <div class="find_title">
                     <h2>Find the Best Egyptian Guide</h2>
                 </div>
-                <div class="main_calc wrap">
-                    <div class="main_calc_list">
-                        <div class="main_calc_list_item">
-                            <div class="main_calc_list_item_title">
+                <div class="find_calc wrap">
+                    <div class="find_calc_list">
+                        <div class="find_calc_list_item">
+                            <div class="find_calc_list_item_title">
                                 <p>Gender</p>
                             </div>
                             <select class="select_calc">
@@ -52,8 +72,8 @@
                                 <option value="1">Female</option>
                             </select>
                         </div>
-                        <div class="main_calc_list_item">
-                            <div class="main_calc_list_item_title">
+                        <div class="find_calc_list_item">
+                            <div class="find_calc_list_item_title">
                                 <p>Age</p>
                             </div>
                             <select class="select_calc">
@@ -62,8 +82,8 @@
                                 <option value="2">50++</option>
                             </select>
                         </div>
-                        <div class="main_calc_list_item">
-                            <div class="main_calc_list_item_title">
+                        <div class="find_calc_list_item">
+                            <div class="find_calc_list_item_title">
                                 <p>Language</p>
                             </div>
                             <select class="select_calc">
@@ -71,8 +91,8 @@
                                 <option value="1">Russian</option>
                             </select>
                         </div>
-                        <div class="main_calc_list_item">
-                            <div class="main_calc_list_item_title">
+                        <div class="find_calc_list_item">
+                            <div class="find_calc_list_item_title">
                                 <p>Lacalisation</p>
                             </div>
                             <select class="select_calc">
@@ -81,15 +101,15 @@
                             </select>
                         </div>
                     </div>
-                    <div class="main_calc_btn">
+                    <div class="find_calc_btn">
                         <button class="btn calc_btn">Search</button>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- start main -->
+        <!-- start find -->
         <!-- start guides -->
-        <section class="guides">
+        <section class="guides" id="guides">
             <div class="guides_wrap wrap">
                 <div class="guides_top">
                     <div class="guides_top_title">
@@ -377,7 +397,7 @@
         </section>
         <!-- end guides -->
         <!-- start how  -->
-        <section class="how">
+        <section class="how" id="how">
             <div class="how_wrap wrap">
                 <div class="how_title">
                     <h3>How does it Work?</h3>
@@ -412,7 +432,7 @@
         </section>
         <!-- end how  -->
         <!-- start are  -->
-        <section class="are">
+        <section class="are" id="are">
             <div class="are_wrap wrap">
                 <div class="are_title">
                     <h2>Are you a Tourist Guide in Egypt?</h2>
@@ -525,7 +545,7 @@
                             <li><a href="#">Help</a></li>
                         </ul>
                     </div>
-                    <div class="footer_col footer_col_contacts">
+                    <div class="footer_col footer_col_contacts" id="contact">
                         <div class="footer_col_title">
                             <p>Contact Us</p>
                         </div>
@@ -550,5 +570,7 @@
         <script src="js/jquery-3.5.1.min.js"></script>
         <script src="js/select2.min.js"></script>
         <script src="js/script.js"></script>
-    </body>
+    </div>
+
+</body>
 </html>
